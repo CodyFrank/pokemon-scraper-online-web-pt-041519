@@ -21,7 +21,8 @@ class Pokemon
     SELECT * FROM pokemon WHERE id = ?
     SQL
      attri = db.execute(sql, id)[0]
-     pokemon = Pokemon.new(attri)
      binding.pry
+     pokemon = Pokemon.new(attri)
+     
   end
 end
