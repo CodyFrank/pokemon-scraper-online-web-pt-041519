@@ -23,6 +23,6 @@ class Pokemon
      attri = db.execute(sql, id)[0]
      binding.pry
      pokemon = Pokemon.new(attri)
-     
+
   end
 end
