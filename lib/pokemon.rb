@@ -20,12 +20,8 @@ class Pokemon
     sql = <<-SQL
     SELECT * FROM pokemon WHERE id = ?
     SQL
-     db.execute(sql, id).map do |row|
-       id = row[0]
-       name = row[1]
-       type = row[2]
-       pokemon = Pokemon.new(id, name, type, db)
+     attri = db.execute(sql, id)
+     pokemon = Pokemon.new(attri)
     end
-    pokemon
   end
 end
