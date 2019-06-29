@@ -1,3 +1,4 @@
+require'pry'
 class Pokemon
   attr_accessor :name, :type, :db
   attr_reader :id
@@ -22,5 +23,6 @@ class Pokemon
      db.execute(sql, id)#.map do |row|
       # Pokemon.new(row)
     # end
+    binding.pry
   end
 end
