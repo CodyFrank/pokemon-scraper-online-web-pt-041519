@@ -22,5 +22,6 @@ class Pokemon
     SQL
      attri = db.execute(sql, id)[0]
      pokemon = Pokemon.new(attri)
+     binding.pry
   end
 end
