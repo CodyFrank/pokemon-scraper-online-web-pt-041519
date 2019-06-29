@@ -25,7 +25,6 @@ class Pokemon
      hash[:id] = x[0]
      hash[:name] = x[1]
      hash[:type] = x[2]
-     hash[:hp] = x[3]
      hash[:db] = db
      pokemon = Pokemon.new(hash)
      pokemon
