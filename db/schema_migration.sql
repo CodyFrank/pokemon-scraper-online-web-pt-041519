@@ -6,4 +6,3 @@ CREATE TABLE pokemon(
   type TEXT
 );
 
-ALTER TABLE pokemon ADD COLUMN hp INTEGER
