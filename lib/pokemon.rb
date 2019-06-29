@@ -28,6 +28,5 @@ class Pokemon
      hash[:db] = db
      pokemon = Pokemon.new(hash)
      pokemon
-
   end
 end
