@@ -22,6 +22,5 @@ class Pokemon
     SQL
      attri = db.execute(sql, id)
      pokemon = Pokemon.new(attri)
-    end
   end
 end
