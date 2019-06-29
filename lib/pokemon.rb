@@ -24,7 +24,7 @@ class Pokemon
        id = row[0]
        name = row[1]
        type = row[2]
-       pokemon = Pokemon.new(id, name, type)
+       pokemon = Pokemon.new(id, name, type, db)
     end
     pokemon
   end
