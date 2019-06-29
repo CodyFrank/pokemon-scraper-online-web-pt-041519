@@ -20,7 +20,7 @@ class Pokemon
     sql = <<-SQL
     SELECT * FROM pokemon WHERE id = ?
     SQL
-     attri = db.execute(sql, id)
+     attri = db.execute(sql, id)[0]
      pokemon = Pokemon.new(attri)
   end
 end
