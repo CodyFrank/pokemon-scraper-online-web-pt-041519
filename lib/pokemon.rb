@@ -17,10 +17,15 @@ class Pokemon
   end
 
   def self.find (id, db)
+    hash = {}
     sql = <<-SQL
     SELECT * FROM pokemon WHERE id = ?
     SQL
-     attri = db.execute(sql, id)[0]
+     x = db.execute(sql, id)[0]
+     hash[:id] = x[0]
+     hash[:name] = x[1]
+     hash[:type] = x[2]
+     hash[:db] = db
      binding.pry
      pokemon = Pokemon.new(attri)
 
