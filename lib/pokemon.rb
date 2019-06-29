@@ -26,8 +26,8 @@ class Pokemon
      hash[:name] = x[1]
      hash[:type] = x[2]
      hash[:db] = db
-     binding.pry
-     pokemon = Pokemon.new(attri)
+     pokemon = Pokemon.new(hash)
+     pokemon
 
   end
 end
